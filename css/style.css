@@ -1720,13 +1720,11 @@ h6 {
   margin-right: 10px; /* Agrega espacio entre el icono y el texto */
 }
 
-@media (width <= 390px){
+@media (max-width: 391px){
   #portfolio{
     display: inline;
   }
-  .tabla {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin-bottom: 20px; /* Espacio entre las tablas */
-    display: block; /* Presentación como bloque */
+  .tabla-principal {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
 }
 }
