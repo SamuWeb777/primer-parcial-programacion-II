@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio fotográfico</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Sidebar with image -->
+    <nav
+      class="ucse-sidebar ucse-hide-medium ucse-hide-small"
+      style="width: 40%"
+    >
+      <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav
+      class="ucse-sidebar ucse-black ucse-animate-right ucse-xxlarge"
+      style="display: none; padding-top: 150px; right: 0; z-index: 2"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="closeNav()"
+        class="ucse-button ucse-black ucse-xxxlarge ucse-display-topright"
+        style="padding: 0 12px"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="ucse-bar-block ucse-center">
+        <a
+          href="#"
+          class="ucse-bar-item ucse-button ucse-text-grey ucse-hover-black"
+          onclick="closeNav()"
+          >Home</a
+        >
+        <a
+          href="#portfolio"
+          class="ucse-bar-item ucse-button ucse-text-grey ucse-hover-black"
+          onclick="closeNav()"
+          >Portfolio</a
+        >
+        <a
+          href="#about"
+          class="ucse-bar-item ucse-button ucse-text-grey ucse-hover-black"
+          onclick="closeNav()"
+          >About</a
+        >
+        <a
+          href="#contact"
+          class="ucse-bar-item ucse-button ucse-text-grey ucse-hover-black"
+          onclick="closeNav()"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="ucse-main ucse-padding-large" style="margin-left: 40%">
+      <!-- Menu icon to open sidebar -->
+      <span
+        class="ucse-button ucse-top ucse-white ucse-xxlarge ucse-text-grey ucse-hover-text-black"
+        style="width: auto; right: 0"
+        onclick="openNav()"
+        ><i class="fa fa-bars"></i
+      ></span>
+
+      <!-- Header -->
+      <header
+        class="ucse-container ucse-center"
+        style="padding: 128px 16px"
+        id="home"
+      >
+        <h1 class="ucse-jumbo"><b>Jane Doe</b></h1>
+        <p>Photographer and Web Designer.</p>
+        <img
+          src="./img/profile_girl.png"
+          class="ucse-image ucse-hide-large ucse-hide-small ucse-round"
+          style="display: block; width: 60%; margin: auto"
+        />
+        <img
+          src="./img/profile_girl.png"
+          class="ucse-image ucse-hide-large ucse-hide-medium ucse-round"
+          width="1000"
+          height="1333"
+        />
+        <button
+          class="ucse-button ucse-light-grey ucse-padding-large ucse-margin-top"
+        >
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+      </header>
+
+      <!-- Portfolio Section -->
+      <div class="ucse-padding-32 ucse-content" id="portfolio">
+        <h2 class="ucse-text-grey">My Portfolio</h2>
+        <hr class="ucse-opacity" />
+
+        <!-- Grid for photos -->
+        <div class="ucse-row-padding" style="margin: 0 -16px">
+          <div class="ucse-half">
+            <img src="./img/wedding.png" style="width: 100%" />
+            <img src="./img/rocks.png" style="width: 100%" />
+            <img src="./img/sailboat.png" style="width: 100%" />
+          </div>
+
+          <div class="ucse-half">
+            <img src="./img/underwater.png" style="width: 100%" />
+            <img src="./img/chef.png" style="width: 100%" />
+            <img src="./img/wedding.png" style="width: 100%" />
+            <img src="./img/p6.png" style="width: 100%" />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- About Section -->
+      <div
+        class="ucse-content ucse-justify ucse-text-grey ucse-padding-32"
+        id="about"
+      >
+        <h2>About</h2>
+        <hr class="ucse-opacity" />
+        <p>
+          Some text about me. Some text about me. I am lorem ipsum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <h3 class="ucse-padding-16">My Skills</h3>
+        <p class="ucse-wide">Photography</p>
+        <div class="ucse-light-grey">
+          <div
+            class="ucse-container ucse-center ucse-padding-small ucse-dark-grey"
+            style="width: 95%"
+          >
+            95%
+          </div>
+        </div>
+        <p class="ucse-wide">Web Design</p>
+        <div class="ucse-light-grey">
+          <div
+            class="ucse-container ucse-center ucse-padding-small ucse-dark-grey"
+            style="width: 85%"
+          >
+            85%
+          </div>
+        </div>
+        <p class="ucse-wide">Photoshop</p>
+        <div class="ucse-light-grey">
+          <div
+            class="ucse-container ucse-center ucse-padding-small ucse-dark-grey"
+            style="width: 80%"
+          >
+            80%
+          </div>
+        </div>
+        <br />
+
+        <div
+          class="ucse-row ucse-center ucse-dark-grey ucse-padding-16 ucse-section"
+        >
+          <div class="ucse-quarter ucse-section">
+            <span class="ucse-xlarge">14+</span><br />
+            Partners
+          </div>
+          <div class="ucse-quarter ucse-section">
+            <span class="ucse-xlarge">55+</span><br />
+            Projects Done
+          </div>
+          <div class="ucse-quarter ucse-section">
+            <span class="ucse-xlarge">89+</span><br />
+            Happy Clients
+          </div>
+          <div class="ucse-quarter ucse-section">
+            <span class="ucse-xlarge">150+</span><br />
+            Meetings
+          </div>
+        </div>
+
+        <button
+          class="ucse-button ucse-light-grey ucse-padding-large ucse-section"
+        >
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+
+        <!-- Testimonials -->
+        <h3 class="ucse-padding-24">My Reputation</h3>
+        <img
+          src="./img/avatar_smoke.png"
+          alt="Avatar"
+          class="ucse-left ucse-circle ucse-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="ucse-large ucse-text-black ucse-margin-right"
+            >Chandler Bing.</span
+          >
+          Web Designer.
+        </p>
+        <p>Jane Doe is just awesome. I am so happy to have met her!</p>
+        <br />
+
+        <img
+          src="./img/bandmember.png"
+          alt="Avatar"
+          class="ucse-left ucse-circle ucse-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="ucse-large ucse-text-black ucse-margin-right"
+            >Chris Fox.</span
+          >
+          CEO at Mighty Schools.
+        </p>
+        <p>Jane Doe saved us from a web disaster.</p>
+        <br />
+
+        <img
+          src="./img/avatar_g2.png"
+          alt="Avatar"
+          class="ucse-left ucse-circle ucse-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="ucse-large ucse-text-black ucse-margin-right"
+            >Rebecca Flex.</span
+          >
+          CEO at Company.
+        </p>
+        <p>No one is better than Jane Doe.</p>
+        <br />
+
+        <!-- TODO: Grid for pricing tables -->
+        <section class="section-tablas">
+        <h3>My Price</h3>
+        <div class="tabla-principal">
+        <div >
+          <table class="tabla" >
+            <tr>
+                <td class="titulo-basic">Basic</td>
+            </tr>
+            <tr>
+                <td>Web Desing</td>
+            </tr>
+            <tr>
+                <td>Photofraphy</td>
+            </tr>
+            <tr>
+                <td>5GB Storage</td>
+            </tr>
+            <tr>
+                <td>Mail Support</td>
+            </tr>
+            <tr>
+                <td><h2>$10</h2><p>per month</p></td>
+            </tr>
+            <tr>
+                <td class="btn-tablas"><button class="btn-sign-up">Sign Up</button></td>
+            </tr>
+        </table>
+        </div>
+        <div>
+          <table class="tabla">
+            <tr>
+                <td class="titulo-pro">Pro</td>
+            </tr>
+            <tr>
+                <td>Web Desing</td>
+            </tr>
+            <tr>
+                <td>Photofraphy</td>
+            </tr>
+            <tr>
+                <td>50GB Storage</td>
+            </tr>
+            <tr>
+                <td>Endless Support</td>
+            </tr>
+            <tr>
+                <td><h2>$25</h2><p>per month</p></td>
+            </tr>
+            <tr>
+                <td class="btn-tablas"><button class="btn-sign-up">Sign Up</button></td>
+            </tr>
+        </table>
+        </div>
+      </div>
+    </section>
+    </div>
+      <!-- TODO: Contact Section -->
+      <section class="section-contacto">
+        <h3>Contact Me</h3>
+        <div >
+        <div class="datos">
+          <p><i class="fa fa-map-marker" style="font-size: 35px;"></i>Chicago, US</p>
+        </div>
+        <div class="datos">
+          <p><i class="fa fa-phone icono " style="font-size: 35px;"></i>Phone: +00151515</p>
+        </div>
+        <div class="datos">
+          <p><i class="fa fa-envelope" style="font-size: 35px;"></i>Email: mail@mail.com</p>
+        </div>
+      </div>
+        <div class="mapa">
+        <img src="img/map.png" alt="">
+      </div>
+    <div class="section-formulario">
+      <form action=""class="formulario-contacto">
+        <h5>Lets get in touch. Send me a message:</h5>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Subjet">
+        <input type="text" placeholder="Message">
+        <button class="btn-enviar"><i class="fa fa-paper-plane" style="font-size: 20px;"></i>SEND MESSAGE</button>
+      </form>
+    </div>
+      </section>
+      <!-- Footer -->
+      <footer
+        class="ucse-container ucse-padding-64 ucse-light-grey ucse-center ucse-opacity ucse-xlarge"
+        style="margin: -24px"
+      >
+        <i class="fa fa-facebook-official ucse-hover-opacity"></i>
+        <i class="fa fa-instagram ucse-hover-opacity"></i>
+        <i class="fa fa-snapchat ucse-hover-opacity"></i>
+        <i class="fa fa-pinterest-p ucse-hover-opacity"></i>
+        <i class="fa fa-twitter ucse-hover-opacity"></i>
+        <i class="fa fa-linkedin ucse-hover-opacity"></i>
+        <p class="ucse-medium">
+          Powered by
+          <u>UCSE</u>
+        </p>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
