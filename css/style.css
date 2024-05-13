@@ -1637,7 +1637,8 @@ h6 {
   background-image: url('../img/profile_girl.png');
   min-height: 100%;
 }
-/****************MI CSS*******************/
+
+/**************** MI CSS *******************/
 .section-tablas, .section-contacto{
   color: #757575;
 }
@@ -1679,7 +1680,7 @@ h6 {
 .btn-tablas{
   background-color: #F1F1F1;
 }
-/*Contacto*/
+/* ---------------------seccion de Contacto-------------------*/
 .datos p {
   display: flex;
   align-items: center; /* Centra verticalmente los elementos */
@@ -1719,8 +1720,8 @@ h6 {
 .btn-enviar  i {
   margin-right: 10px; /* Agrega espacio entre el icono y el texto */
 }
-
-@media (max-width: 391px){
+/*******************RESPONSIVE********************/
+@media (max-width: 767px){
   #portfolio{
     display: inline;
   }
